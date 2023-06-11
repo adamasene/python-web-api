@@ -5,12 +5,12 @@ dados =[{"nome": "Brun","cidade":"Viana"},
 
 
 #processar os dados 
-template = """\ 
+template ="""
 <html>
     <body>
         <lu>
-            <li> {dados[Nome:]} </li>
-            <li> {dados[Cidade:]} </li>
+            <li> {dados[nome]} </li>
+            <li> {dados[cidade]} </li>
         </lu>
     </body>
 
@@ -21,4 +21,5 @@ template = """\
 
 for item in dados:
     print(template.format(dados=item))
+
     
